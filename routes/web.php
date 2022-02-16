@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,6 @@ Route::get('/broow', function () {return view('broow');});
 Route::redirect('/contacts', '/broow');
 
 Route::get('/nicuu', function () {return view('nicuu');});
+
+
+Route::get('/article', [ArticleController::class, 'index']);

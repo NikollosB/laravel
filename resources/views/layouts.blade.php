@@ -6,28 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>App Name - {{ ucfirst($title) }}</title>
 </head>
-<style>
-    body{
-        background-color:black;
-        color:green;
-        font-family: consolas;
-        
-    }
-    a{
-        text-decoration: none; 
-        color:green;
-    }
-    </style>
+<link rel="stylesheet" href="{{URL::asset('css/app.css')}}" class="href">
 <body>
-
-@yield('content')
-
 <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contacts">Contacts</a></li>
+        <li><a href="/article">Articole</a></li>
         <li><a href="/nicuu">Nicuu</a></li>
 </ul>
+@yield('content')
+
+
 
 </body>
 </html>
